@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartify - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page.js">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html"><img src="logo.png" alt="" width="25px"> Cartify</a></div>
+            
+            <div class="header-right">
+                <div class="search-bar">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="Search for products...">
+                </div>
+                
+                <div class="header-actions">
+                    <button class="header-btn" onclick="">
+                        <span class="icon">👤</span>
+                        <a href="login.html">Login</a>
+                    </button>
+                    <button class="header-btn" id="cart-btn">
+                        <span class="icon">🛒</span>
+                        Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories -->
+    <div class="categories">
+        <div class="category" onclick="window.location.href='fruits.html'">
+            <div class="category-icon">🍎</div>
+            <div class="category-name">Fruits</div>
+        </div>
+        <div class="category" onclick="window.location.href='vegetables.html'">
+            <div class="category-icon">🥬</div>
+            <div class="category-name">Vegetables</div>
+        </div>
+        <div class="category" onclick="window.location.href='dairy.html'">
+            <div class="category-icon">🥛</div>
+            <div class="category-name">Dairy</div>
+        </div>
+        <div class="category" onclick="window.location.href='bakery.html'">
+            <div class="category-icon">🍞</div>
+            <div class="category-name">Bakery</div>
+        </div>
+        <div class="category" onclick="window.location.href='beverages.html'">
+            <div class="category-icon">🥤</div>
+            <div class="category-name">Beverages</div>
+        </div>
+        <div class="category" onclick="window.location.href='snacks.html'">
+            <div class="category-icon">🍫</div>
+            <div class="category-name">Snacks</div>
+        </div>
+        <div class="category" onclick="window.location.href='meat.html'">
+            <div class="category-icon">🍗</div>
+            <div class="category-name">Meat</div>
+        </div>
+        <div class="category" onclick="window.location.href='homecare.html'">
+            <div class="category-icon">🧼</div>
+            <div class="category-name">Home Care</div>
+        </div>
+        <div class="category" onclick="window.location.href='mobile.html'">
+            <div class="category-icon">📱</div>
+            <div class="category-name">Mobile</div>
+        </div>
+        <div class="category" onclick="window.location.href='electronics.html'">
+            <div class="category-icon">💻</div>
+            <div class="category-name">Electronics</div>
+        </div>
+        <div class="category" onclick="window.location.href='fashion.html'">
+            <div class="category-icon">👕</div>
+            <div class="category-name">Fashion</div>
+        </div>
+    </div>
+
+    <!-- Image Slider -->
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="slide">
+                <img src="B1.jpg" alt="Special Offers">
+            </div>
+            <div class="slide">
+                <img src="B2.jpg" alt="New Arrivals">
+            </div>
+            <div class="slide">
+                <img src="B3.jpg" alt="Best Sellers">
+            </div>
+            <div class="slide">
+                <img src="B4.jpg" alt="Flash Sale">
+            </div>
+        </div>
+        <div class="slider-nav" id="slider-nav">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <div class="products-section">
+        <h2 class="section-title">
+            Daily Essentials
+            <a href="daily-essentials.html" class="view-all">View All</a>
+        </h2>
+        
+        <div class="products-grid" id="daily-essentials">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- More Products Section -->
+    <div class="products-section">
+        <h2 class="section-title">
+            Snacks & Beverages
+            <a href="snacks-beverages.html" class="view-all">View All</a>
+        </h2>
+        
+        <div class="products-grid" id="snacks-beverages">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- More Products Section -->
+    <div class="products-section">
+        <h2 class="section-title">
+            Fresh Fruits & Vegetables
+            <a href="fruits-vegetables.html" class="view-all">View All</a>
+        </h2>
+        
+        <div class="products-grid" id="fruits-vegetables">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- More Products Section -->
+    <div class="products-section">
+        <h2 class="section-title">
+            Dairy & Bakery
+            <a href="dairy-bakery.html" class="view-all">View All</a>
+        </h2>
+        
+        <div class="products-grid" id="dairy-bakery">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- More Products Section -->
+    <div class="products-section">
+        <h2 class="section-title">
+            Mobile Phones
+            <a href="mobile.html" class="view-all">View All</a>
+        </h2>
+        
+        <div class="products-grid" id="mobile">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- More Products Section -->
+    <div class="products-section">
+        <h2 class="section-title">
+            Electronics
+            <a href="electronics.html" class="view-all">View All</a>
+        </h2>
+        
+        <div class="products-grid" id="electronics">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- More Products Section -->
+    <div class="products-section">
+        <h2 class="section-title">
+            Fashion
+            <a href="fashion.html" class="view-all">View All</a>
+        </h2>
+        
+        <div class="products-grid" id="fashion">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Cart Footer -->
+    <div class="cart-footer" id="cart-footer">
+        <div class="cart-info">
+            <span class="cart-icon">🛒</span>
+            <div class="cart-text">
+                <span class="cart-items">0 items</span> | ₹0
+            </div>
+        </div>
+        <button class="view-cart-btn" id="view-cart-btn" onclick="window.location.href='cart.html'">View Cart</button>
+    </div>
+
+    <script>
+        // Product Data
+        const products = {
+            "daily-essentials": [
+                {
+                    id: 1,
+                    name: "Fresh Bananas - Premium Quality",
+                    weight: "1 dozen",
+                    price: 54,
+                    originalPrice: 60,
+                    image: "banana.jpg",
+                    badge: "10% OFF"
+                },
+                {
+                    id: 2,
+                    name: "Cow Milk - Full Cream",
+                    weight: "1L Tetra Pack",
+                    price: 60,
+                    image: "milk.jpg"
+                },
+                {
+                    id: 3,
+                    name: "Farm Fresh Eggs",
+                    weight: "6 pieces",
+                    price: 45,
+                    image: "egg.jpg",
+                    badge: "BESTSELLER"
+                },
+                {
+                    id: 4,
+                    name: "Whole Wheat Brown Bread",
+                    weight: "400g",
+                    price: 35,
+                    image: "bread.jpg"
+                },
+                {
+                    id: 5,
+                    name: "Greek Yogurt - Natural",
+                    weight: "200g cup",
+                    price: 80,
+                    image: "yogurt.webp",
+                    badge: "NEW"
+                },
+                {
+                    id: 6,
+                    name: "Washington Apples - Premium",
+                    weight: "4 pieces",
+                    price: 180,
+                    originalPrice: 200,
+                    image: "apple.jpg"
+                }
+            ],
+            "snacks-beverages": [
+                {
+                    id: 7,
+                    name: "Potato Chips - Classic Salted",
+                    weight: "45g pack",
+                    price: 25,
+                    originalPrice: 30,
+                    image: "potato-chips-classic-salted.jpeg",
+                    badge: "15% OFF"
+                },
+                {
+                    id: 8,
+                    name: "Coca Cola - Original Taste",
+                    weight: "750ml bottle",
+                    price: 50,
+                    image: "coca-cola-original-taste.webp"
+                },
+                {
+                    id: 9,
+                    name: "Choco Chip Cookies - Premium",
+                    weight: "150g pack",
+                    price: 65,
+                    image: "choco-chip-cookies-premium.jpeg"
+                },
+                {
+                    id: 10,
+                    name: "Mineral Water - Natural Spring",
+                    weight: "1L bottle",
+                    price: 20,
+                    image: "mineral-water-natural-spring.webp"
+                }
+            ],
+            "fruits-vegetables": [
+                {
+                    id: 11,
+                    name: "Fresh Tomatoes - Organic",
+                    weight: "500g",
+                    price: 30,
+                    image: "fresh-tomatoes-organic.jpg"
+                },
+                {
+                    id: 12,
+                    name: "Organic Spinach - Farm Fresh",
+                    weight: "200g",
+                    price: 40,
+                    image: "organic-spinach-farm-fresh.jpeg"
+                },
+                {
+                    id: 13,
+                    name: "Sweet Mangoes - Alphonso",
+                    weight: "1kg",
+                    price: 120,
+                    originalPrice: 150,
+                    image: "sweet-mangoes-alphonso.jpeg",
+                    badge: "20% OFF"
+                },
+                {
+                    id: 14,
+                    name: "Fresh Carrots - Premium",
+                    weight: "500g",
+                    price: 25,
+                    image: "fresh-carrots-premium.webp"
+                }
+            ],
+            "dairy-bakery": [
+                {
+                    id: 15,
+                    name: "Butter - Unsalted",
+                    weight: "100g",
+                    price: 45,
+                    image: "butter-unsalted.jpeg"
+                },
+                {
+                    id: 16,
+                    name: "Cheese Slices - Cheddar",
+                    weight: "200g",
+                    price: 90,
+                    image: "cheese-slices-cheddar.jpeg"
+                },
+                {
+                    id: 17,
+                    name: "Croissants - Fresh Baked",
+                    weight: "4 pieces",
+                    price: 60,
+                    image: "croissants-fresh-baked.jpeg"
+                },
+                {
+                    id: 18,
+                    name: "Chocolate Cake - Premium",
+                    weight: "500g",
+                    price: 250,
+                    image: "chocolate-cake-premium.jpeg"
+                }
+            ],
+            "mobile": [
+                {
+                    id: 19,
+                    name: "Smartphone X12 Pro",
+                    weight: "With 1 year warranty",
+                    price: 24999,
+                    originalPrice: 27999,
+                    image: "smartphone-x12-pro.jpeg",
+                    badge: "11% OFF"
+                },
+                {
+                    id: 20,
+                    name: "Galaxy Note 20",
+                    weight: "With free case",
+                    price: 35999,
+                    image: "galaxy-note-20.jpeg"
+                },
+                {
+                    id: 21,
+                    name: "iPhone 13",
+                    weight: "128GB Storage",
+                    price: 59990,
+                    image: "iphone-13.jpeg"
+                },
+                {
+                    id: 22,
+                    name: "OnePlus 9RT",
+                    weight: "5G Enabled",
+                    price: 42999,
+                    originalPrice: 45999,
+                    image: "oneplus-9rt.jpeg",
+                    badge: "7% OFF"
+                }
+            ],
+            "electronics": [
+                {
+                    id: 23,
+                    name: "Smart TV 55\" 4K",
+                    weight: "With 2 year warranty",
+                    price: 44999,
+                    image: "smart-tv-55-4k.jpeg"
+                },
+                {
+                    id: 24,
+                    name: "Wireless Headphones",
+                    weight: "Noise Cancelling",
+                    price: 5999,
+                    originalPrice: 7999,
+                    image: "wireless-headphones.jpeg",
+                    badge: "25% OFF"
+                },
+                {
+                    id: 25,
+                    name: "Laptop Ultra Slim",
+                    weight: "16GB RAM, 512GB SSD",
+                    price: 64990,
+                    image: "laptop-ultra-slim.jpeg"
+                },
+                {
+                    id: 26,
+                    name: "Smart Watch Pro",
+                    weight: "Health Monitoring",
+                    price: 8999,
+                    image: "smart-watch-pro.jpeg"
+                }
+            ],
+            "fashion": [
+                {
+                    id: 27,
+                    name: "Men's Casual Shirt",
+                    weight: "Linen, All Sizes",
+                    price: 1299,
+                    originalPrice: 1799,
+                    image: "mens-casual-shirt.jpeg",
+                    badge: "28% OFF"
+                },
+                {
+                    id: 28,
+                    name: "Women's Summer Dress",
+                    weight: "Cotton, All Sizes",
+                    price: 1599,
+                    image: "womens-summer-dress.jpeg"
+                },
+                {
+                    id: 29,
+                    name: "Running Shoes",
+                    weight: "Cushioned Sole",
+                    price: 2999,
+                    originalPrice: 3999,
+                    image: "running-shoes.jpeg",
+                    badge: "25% OFF"
+                },
+                {
+                    id: 30,
+                    name: "Designer Handbag",
+                    weight: "Premium Leather",
+                    price: 4599,
+                    image: "designer-handbag.jpeg"
+                }
+            ]
+        };
+
+
+        // Cart Data
+        let cart = [];
+        
+        // DOM Elements
+        const dailyEssentialsGrid = document.getElementById('daily-essentials');
+        const snacksBeveragesGrid = document.getElementById('snacks-beverages');
+        const fruitsVegetablesGrid = document.getElementById('fruits-vegetables');
+        const dairyBakeryGrid = document.getElementById('dairy-bakery');
+        const mobileGrid = document.getElementById('mobile');
+        const electronicsGrid = document.getElementById('electronics');
+        const fashionGrid = document.getElementById('fashion');
+        const cartFooter = document.getElementById('cart-footer');
+        const cartItemsEl = document.querySelector('.cart-items');
+        const cartTotalEl = document.querySelector('.cart-text');
+        const cartBtn = document.getElementById('cart-btn');
+        const viewCartBtn = document.getElementById('view-cart-btn');
+        const slider = document.getElementById('slider');
+        const sliderNav = document.getElementById('slider-nav');
+        const dots = sliderNav.querySelectorAll('.slider-dot');
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+            updateCartUI();
+            initSlider();
+            
+            // Event listeners
+            cartBtn.addEventListener('click', () => {
+                window.location.href = 'cart.html';
+            });
+        });
+
+        // Initialize slider
+        function initSlider() {
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            
+            function goToSlide(n) {
+                slider.style.transform = `translateX(-${n * 100}%)`;
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[n].classList.add('active');
+                currentSlide = n;
+            }
+            
+            // Auto slide
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                goToSlide(currentSlide);
+            }, 3000);
+            
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    goToSlide(index);
+                });
+            });
+        }
+
+        // Render products
+        function renderProducts() {
+            // Daily Essentials
+            products['daily-essentials'].forEach(product => {
+                dailyEssentialsGrid.appendChild(createProductCard(product));
+            });
+            
+            // Snacks & Beverages
+            products['snacks-beverages'].forEach(product => {
+                snacksBeveragesGrid.appendChild(createProductCard(product));
+            });
+            
+            // Fruits & Vegetables
+            products['fruits-vegetables'].forEach(product => {
+                fruitsVegetablesGrid.appendChild(createProductCard(product));
+            });
+            
+            // Dairy & Bakery
+            products['dairy-bakery'].forEach(product => {
+                dairyBakeryGrid.appendChild(createProductCard(product));
+            });
+            
+            // Mobile
+            products['mobile'].forEach(product => {
+                mobileGrid.appendChild(createProductCard(product));
+            });
+            
+            // Electronics
+            products['electronics'].forEach(product => {
+                electronicsGrid.appendChild(createProductCard(product));
+            });
+            
+            // Fashion
+            products['fashion'].forEach(product => {
+                fashionGrid.appendChild(createProductCard(product));
+            });
+        }
+
+        // Create product card HTML
+        function createProductCard(product) {
+            const card = document.createElement('div');
+            card.className = 'product-card';
+            
+            let badgeHTML = '';
+            if (product.badge) {
+                badgeHTML = `<div class="product-badge">${product.badge}</div>`;
+            }
+            
+            let originalPriceHTML = '';
+            if (product.originalPrice) {
+                originalPriceHTML = `<span class="original-price">₹${product.originalPrice}</span>`;
+            }
+            
+            card.innerHTML = `
+                ${badgeHTML}
+                <div class="product-image-container">
+                    <img src="${product.image}" alt="${product.name}" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">${product.name}</div>
+                    <div class="product-weight">${product.weight}</div>
+                    <div class="product-price">
+                        <div class="price">
+                            ${originalPriceHTML}
+                            ₹${product.price}
+                        </div>
+                        <button class="add-btn" data-id="${product.id}">+</button>
+                    </div>
+                </div>
+            `;
+            
+            // Add event listener to the add button
+            const addBtn = card.querySelector('.add-btn');
+            addBtn.addEventListener('click', () => addToCart(product));
+            
+            return card;
+        }
+
+        // Add product to cart
+        function addToCart(product) {
+            const existingItem = cart.find(item => item.id === product.id);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    image: product.image,
+                    quantity: 1
+                });
+            }
+            
+            updateCartUI();
+            
+            // Animation feedback
+            const addBtn = document.querySelector(`.add-btn[data-id="${product.id}"]`);
+            addBtn.textContent = '✓';
+            addBtn.style.backgroundColor = '#4CAF50';
+            
+            setTimeout(() => {
+                addBtn.textContent = '+';
+                addBtn.style.backgroundColor = '';
+            }, 1000);
+        }
+
+        // Update cart UI
+        function updateCartUI() {
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const totalAmount = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            
+            // Update footer cart
+            cartItemsEl.textContent = `${totalItems} ${totalItems === 1 ? 'item' : 'items'}`;
+            cartTotalEl.textContent = `${totalItems} ${totalItems === 1 ? 'item' : 'items'} | ₹${totalAmount}`;
+            
+            // Show/hide footer based on cart items
+            if (totalItems > 0) {
+                cartFooter.style.display = 'flex';
+            } else {
+                cartFooter.style.display = 'none';
+            }
+            
+            // Save cart to localStorage for the cart page
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        // Make categories scrollable on mobile
+        const categories = document.querySelector('.categories');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        categories.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - categories.offsetLeft;
+            scrollLeft = categories.scrollLeft;
+        });
+
+        categories.addEventListener('mouseleave', () => {
+            isDown = false;
+        });
+
+        categories.addEventListener('mouseup', () => {
+            isDown = false;
+        });
+
+        categories.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - categories.offsetLeft;
+            const walk = (x - startX) * 2;
+            categories.scrollLeft = scrollLeft - walk;
+        });
+
+        // Touch support for categories scroll
+        categories.addEventListener('touchstart', (e) => {
+            isDown = true;
+            startX = e.touches[0].pageX - categories.offsetLeft;
+            scrollLeft = categories.scrollLeft;
+        });
+
+        categories.addEventListener('touchend', () => {
+            isDown = false;
+        });
+
+        categories.addEventListener('touchmove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            const x = e.touches[0].pageX - categories.offsetLeft;
+            const walk = (x - startX) * 2;
+            categories.scrollLeft = scrollLeft - walk;
+        });
+    </script>
+</body>
+</html>
